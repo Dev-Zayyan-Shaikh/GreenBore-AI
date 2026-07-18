@@ -79,4 +79,6 @@ datasets/**/*.gz
 datasets/**/*.zip
 !datasets/.gitkeep
 
-.ai
+.instructions
+
+docs/*
