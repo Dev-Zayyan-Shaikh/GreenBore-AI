@@ -217,13 +217,13 @@ This prediction is based on statistical correlations and standard logging respon
 
 class GeminiLLMProvider:
     """
-    LLM text generator using Google Gemini API (gemini-1.5-flash).
+    LLM text generator using Google Gemini API (gemini-flash-latest).
     """
 
     def __init__(self, api_key: str) -> None:
         self.api_key = api_key
-        # Using gemini-1.5-flash as the default reliable model
-        self.url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent"
+        # Using gemini-flash-latest as the default reliable model
+        self.url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent"
 
     def generate(
         self, prompt: str, retrieved_chunks: list[dict[str, Any]] | None = None

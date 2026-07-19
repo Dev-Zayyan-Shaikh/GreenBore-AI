@@ -45,18 +45,20 @@ class LocalEmbeddingProvider:
 
 class GeminiEmbeddingProvider:
     """
-    Remote embedding generator using Google Generative AI text-embedding-004 API.
+    Remote embedding generator using Google Generative AI gemini-embedding-2 API.
     """
 
-    def __init__(self, api_key: str) -> None:
+    def __init__(self, api_key: str, dimension: int = 768) -> None:
         self.api_key = api_key
-        self.url = "https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:embedContent"
+        self.dimension = dimension
+        self.url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-2:embedContent"
 
     def get_embedding(self, text: str) -> list[float]:
         headers = {"Content-Type": "application/json"}
         payload = {
-            "model": "models/text-embedding-004",
+            "model": "models/gemini-embedding-2",
             "content": {"parts": [{"text": text}]},
+            "outputDimensionality": self.dimension,
         }
         params = {"key": self.api_key}
 
@@ -85,7 +87,9 @@ class DualModeEmbeddingProvider:
 
         if self.api_key and self.api_key.strip():
             logger.info("Initializing Gemini embedding provider (key present).")
-            self.gemini_provider: GeminiEmbeddingProvider | None = GeminiEmbeddingProvider(api_key=self.api_key)
+            self.gemini_provider: GeminiEmbeddingProvider | None = GeminiEmbeddingProvider(
+                api_key=self.api_key, dimension=self.dimension
+            )
         else:
             logger.info(
                 "No Gemini API key found. Falling back to local offline embeddings."

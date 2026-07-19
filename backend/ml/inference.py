@@ -15,34 +15,43 @@ class InferenceService:
         self._preprocessor: Any = None
         self._metadata: Any = None
 
-    def predict(self, request: PredictRequest) -> PredictResponse:
+    def predict(self, request: PredictRequest, model_id: str | None = None) -> PredictResponse:
         """Loads the production model and evaluates the classification probability.
 
         Args:
             request: The telemetry predict payload request.
+            model_id: Optional specific model ID to use instead of the production model.
 
         Returns:
             The PredictResponse containing classification result and confidence.
         """
-        self._ensure_model_loaded()
+        if model_id:
+            model_obj, preprocessor_obj, features = self.registry.load_model(model_id)
+            active_model_id = model_id
+        else:
+            self._ensure_model_loaded()
+            model_obj = self._model
+            preprocessor_obj = self._preprocessor
+            features = self._metadata.features
+            active_model_id = self._metadata.model_id
 
         # Build DataFrame to align with the model's feature names and avoid warnings
         features_dict = request.model_dump()
-        input_row = {feat: [features_dict[feat]] for feat in self._metadata.features}
+        input_row = {feat: [features_dict[feat]] for feat in features}
         df_input = pd.DataFrame(input_row)
 
         # Scale features
-        scaled_input = self._preprocessor.transform(df_input)
+        scaled_input = preprocessor_obj.transform(df_input)
 
         # Run classification
-        prediction = self._model.predict(scaled_input)[0]
-        probabilities = self._model.predict_proba(scaled_input)[0]
+        prediction = model_obj.predict(scaled_input)[0]
+        probabilities = model_obj.predict_proba(scaled_input)[0]
 
         # Confidence corresponds to the probability of the predicted outcome class
         confidence = probabilities[int(prediction)]
 
         return PredictResponse(
-            model_id=self._metadata.model_id,
+            model_id=active_model_id,
             prediction=bool(prediction == 1),
             confidence=float(confidence),
         )
