@@ -149,5 +149,3 @@ From the `backend` folder:
 
 ---
 
-## 👥 Principal Contributor
-* **Antigravity** (AI Software Engineer Agent)
