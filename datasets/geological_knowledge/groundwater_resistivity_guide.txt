@@ -1,0 +1,15 @@
+Title: Petrophysical Resistivity Guide for Groundwater Exploration
+Author: GreenBore AI Research Group
+Category: Resistivity & Hydrogeology
+Status: Synthetic reference document
+
+Overview:
+Electrical resistivity is one of the most critical sensor measurements used to identify water-bearing formations. Since water is a good conductor when it contains dissolved solids, water-bearing zones exhibit significantly lower electrical resistivity compared to tight, dry rock matrices.
+
+Interpretation Rules:
+1. Very Low Resistivity (< 50 Ohm-m): Often indicates clay-rich formations or saline groundwater. Clay holds water but has low permeability, making it a poor aquifer target.
+2. Moderate Resistivity (50 - 250 Ohm-m): The primary target zone for fresh-water aquifers, particularly in sandstone, gravel, or fractured limestone.
+3. High Resistivity (> 500 Ohm-m): Typically indicates dense, non-porous rock types like massive granite, basalt, or tight limestone with little to no groundwater presence, unless heavily fractured.
+
+Correlation with Porosity:
+Resistivity must always be analyzed alongside porosity. A formation with high porosity and low-to-moderate resistivity is a classic indicator of a productive aquifer. If porosity is low but resistivity is high, the rock is tight and dry.

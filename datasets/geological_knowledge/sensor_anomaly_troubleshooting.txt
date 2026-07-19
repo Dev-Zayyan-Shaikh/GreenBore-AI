@@ -1,0 +1,13 @@
+Title: Troubleshooting Guide: Borehole Log Sensor Anomalies and Noise
+Author: GreenBore Sensor Calibration Lab
+Category: Instrumentation & QA
+Status: Synthetic reference document
+
+Overview:
+Borehole logging instruments operate in harsh, high-pressure, and fluid-filled environments. Understanding and correcting sensor anomalies is critical to avoid false predictions of water presence.
+
+Common Sensor Anomalies:
+1. Resistivity Washout: If the borehole diameter expands significantly (washout), the resistivity sensor measures the drilling mud instead of the formation, resulting in an artificially low resistivity reading (often close to 1-10 Ohm-m). Cross-reference with density logs; washouts also cause erratic density drops.
+2. Clay-Induced Low Resistivity: Clay minerals conduct electricity, causing low resistivity. This can be mistaken for water. To differentiate, check the Gamma-Ray log. High Gamma-Ray readings (> 100 API) indicate clay/shale, while low Gamma-Ray (< 50 API) combined with low resistivity indicates a true freshwater sand aquifer.
+3. Cycle Skipping in Sonic Logs: Occurs when the sonic transmitter signal is attenuated by fractures or gas, causing the receiver to miss the first wave arrival. This results in sudden, abnormally high spikes in sonic travel time.
+4. Sensor Noise Calibration: Raw logs should be smoothed using a 5-point moving average (MA5) to eliminate Gaussian electronic noise without distorting formation boundaries.

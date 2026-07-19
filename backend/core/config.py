@@ -27,6 +27,11 @@ class Settings(BaseSettings):
 
     DATABASE_URL: str = "postgresql+asyncpg://postgres:postgres@db:5432/greenbore"
 
+    # RAG & LLM Configurations
+    GEMINI_API_KEY: str = ""
+    RAG_EMBEDDING_DIMENSION: int = 128
+    RAG_KNOWLEDGE_DIR: str = "datasets/geological_knowledge"
+
     model_config = SettingsConfigDict(
         env_file=".env", env_file_encoding="utf-8", case_sensitive=True, extra="ignore"
     )

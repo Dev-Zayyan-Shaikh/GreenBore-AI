@@ -1,0 +1,17 @@
+Title: Standard Operating Procedures for Water Well Casing and Design
+Author: GreenBore Well Drilling Engineering Team
+Category: Well Design & Casing
+Status: Synthetic reference document
+
+Overview:
+Proper well design is crucial to prevent borehole collapse, seal off contaminated shallow aquifers, and maximize freshwater yields. The key components of well design are casing selection, screen placement, and gravel packing.
+
+Well Casing Selection Guidelines:
+1. Solid Steel Casing: Used in unconsolidated materials (clay, sand, gravel) to keep the hole open. In hard, stable rock (like massive granite or dense limestone), casing is often not required for the entire depth, and an open-hole design is used.
+2. PVC Casing: Suitable for shallow, low-corrosive wells. Steel is preferred for deep wells (> 100 meters) due to structural load.
+3. Grouting: The annular space between the casing and the borehole wall must be filled with cement grout down to at least 15 meters to prevent surface run-off contamination.
+
+Well Screen and Slot Design:
+- Well screens must be placed precisely adjacent to the identified water-bearing zone (aquifer).
+- Placing screens adjacent to clay or shale layers will lead to muddy water, well siltation, and low yields.
+- Slot size must match the grain size of the aquifer material. For sandstone, a screen slot size of 0.5 mm to 1.0 mm is standard, accompanied by a clean gravel pack.

@@ -1,0 +1,19 @@
+Title: Rock Type Classification and Hydrogeological Behavior
+Author: Earth Science Research Institute
+Category: Rock Classification
+Status: Synthetic reference document
+
+Overview:
+Different rock types exhibit distinct physical properties that directly govern their water-bearing potential.
+
+Classification System:
+1. Sandstone (Rock Code 1): Sedimentary rock composed of sand grains. Typically has high porosity and high permeability. Highly favorable for water wells.
+2. Limestone (Rock Code 2): Carbonate sedimentary rock. Can be dense and tight, but frequently hosts secondary water-bearing networks via fractures and karst dissolution. Highly variable but potentially excellent yields.
+3. Claystone / Shale (Rock Code 0 or 3): Fine-grained sedimentary rocks. High clay content. Act as confining layers (aquitards) that seal aquifers. Do not drill screens in these zones.
+4. Granite / Igneous (Rock Code 4): Crystalline rock. Water presence is strictly dependent on fractures. Massive granite is completely dry and serves as a natural barrier.
+
+Summary Matrix:
+- Sandstone: High porosity, high permeability, low resistivity (when saturated).
+- Limestone: Low-to-moderate porosity, high fracture permeability, variable resistivity.
+- Claystone: High porosity, very low permeability, very low resistivity (due to clay minerals, not water yield).
+- Granite: Low porosity, low permeability, high resistivity (except in water-bearing fracture zones).

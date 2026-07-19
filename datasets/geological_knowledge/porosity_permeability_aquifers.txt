@@ -1,0 +1,19 @@
+Title: Porosity and Permeability Characteristics of Groundwater Aquifers
+Author: Geological Survey of GreenBore
+Category: Porosity & Aquifers
+Status: Synthetic reference document
+
+Overview:
+Porosity and permeability determine the capacity of a geological formation to store and transmit groundwater. 
+- Porosity is the percentage of void space in a rock or soil.
+- Permeability is the measure of the ease with which a fluid can flow through the formation's interconnected pore spaces.
+
+Aquifer Materials and Porosity Ranges:
+1. Sandstone: Exhibits moderate to high porosity (10% to 30%) and high permeability. Excellent aquifer material because the pore spaces are well-connected.
+2. Limestone: Can have low primary porosity, but secondary porosity (fractures, dissolution channels, caves) can range from 5% to 20%, resulting in extremely high localized permeability.
+3. Clay and Shale: Possess very high porosity (up to 50%) but extremely low permeability due to tiny, isolated pore spaces. They act as aquitards (confining layers) that block water flow.
+4. Granite and Igneous Rocks: Have negligible primary porosity (< 1%) and permeability. They only yield water if they contain active fracture systems.
+
+Key Indicators:
+- A high porosity_resistivity_ratio is a strong signature of highly porous, saturated zones.
+- Well-sorted sand deposits yield the highest permeability and are the easiest to develop for high-yield wells.

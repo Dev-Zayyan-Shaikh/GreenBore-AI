@@ -48,6 +48,7 @@ select = [
 ]
 ignore = [
     "B008",  # Allow Depends() in FastAPI route defaults
+    "E501",  # Defer line length to formatter; allow long string literals/comments for readability
 ]
 
 [tool.mypy]

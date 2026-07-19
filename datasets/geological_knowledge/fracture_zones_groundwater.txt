@@ -1,0 +1,16 @@
+Title: Characterization of Fracture Zones in Hard Rock Groundwater Aquifers
+Author: Dr. Marcus Vance, Hydrogeologist
+Category: Fracture Systems
+Status: Synthetic reference document
+
+Overview:
+In hard rock terrains (such as granites, gneisses, and dense limestones), groundwater is stored and transmitted almost exclusively through fractures, joints, and fault zones. These are known as fractured rock aquifers.
+
+Identifying Fracture Zones in Borehole Logs:
+1. Resistivity Drops: Sharp, localized decreases in resistivity measurements within otherwise high-resistivity rock indicate water-filled fractures.
+2. Gamma-Ray Spikes: Sometimes clay or mineral deposits fill fractures, leading to higher gamma-ray readings. However, clean, water-filled fractures will not show gamma spikes.
+3. Sonic Travel Time Increases: Fractures cause acoustic waves to slow down. A localized increase in sonic travel time (slowing of wave propagation) indicates mechanical fractures or high-porosity intervals.
+4. Density Decreases: Bulk density drops significantly in fractured zones compared to competent, massive rock.
+
+Drilling Implications:
+Drilling should be targeted to intersect major sub-vertical fracture networks. If a borehole is drilled entirely in massive, unfractured granite, it will remain dry regardless of the depth.
