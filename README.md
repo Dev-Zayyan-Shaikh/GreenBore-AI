@@ -148,4 +148,3 @@ From the `backend` folder:
 * **Logger Precedence**: Always print structured events using Python's `logging` system; direct `print()` calls in endpoints are prohibited.
 
 ---
-
