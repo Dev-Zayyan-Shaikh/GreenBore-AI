@@ -189,9 +189,13 @@ export default function App() {
       {/* Sidebar Navigation */}
       <aside className="w-64 bg-white border-r border-slate-200 flex flex-col justify-between">
         <div>
-          {/* Logo Header */}
           <div className="h-16 flex items-center px-6 border-b border-slate-200 gap-3 bg-slate-50/50">
-            <span className="text-2xl">💧</span>
+            <svg className="w-6 h-6 text-blue-600 flex-shrink-0 animate-pulse" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              <path d="M8 12h8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+              <path d="M7 15h10" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+              <path d="M9 18h6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+            </svg>
             <div>
               <h1 className="text-sm font-bold bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">
                 GreenBore AI
@@ -257,9 +261,6 @@ export default function App() {
             <span className="text-slate-600 font-bold max-w-[120px] truncate">{activeModelId || "None"}</span>
           </div>
 
-          <div className="flex items-center justify-between text-[9px] text-slate-400 border-t border-slate-200 pt-2">
-            <span>v1.0.0 (Phase 5)</span>
-          </div>
         </div>
       </aside>
 
